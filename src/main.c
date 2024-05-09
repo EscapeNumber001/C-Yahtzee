@@ -98,6 +98,7 @@ void initScore()
 
 void printDice()
 {
+  printf("Roll %d\n", gameState.rollsThisSet);
     for (int i = 0; i < NUM_DICE; i++)
     {
       if (gameState.dice[i].isLocked)
@@ -202,6 +203,8 @@ void scoringMode()
     }
     break;
   }
+  rollDice();  // The player should be forced to roll after scoring.
+  printDice();
 }
 
 
