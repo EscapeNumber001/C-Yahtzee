@@ -146,7 +146,7 @@ void lockingMode()
 
       if (lockQuestionResponse >= NUM_DICE)
       {
-	printf("Uh-oh! That die doesn't exist. Please choose a number between 0 and 4.\n");
+	printf("Uh-oh! That die doesn't exist. Please choose a number between 1 and 5.\n");
 	continue;
       }
 
